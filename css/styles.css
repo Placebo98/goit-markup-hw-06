@@ -429,10 +429,10 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	min-width: 408px;
-	min-height: 600px;
+	width: 408px;
+	height: 584px;
 	background-color: #ffffff;
-	padding: 20px;
+	padding: 72px 24px 24px;
 }
 
 .modal-close {
@@ -447,7 +447,8 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:is(:hover, :focus) {
 	fill: white;
@@ -456,7 +457,6 @@ a {
 }
 
 .modal-form {
-	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -467,8 +467,7 @@ a {
 	text-align: center;
 	letter-spacing: 0.02em;
 	color: #2e2f42;
-	margin-bottom: 14px;
-	margin-top: 24px;
+	margin-bottom: 16px;
 }
 
 .form-field {
@@ -487,7 +486,7 @@ a {
 }
 .form-input {
 	width: 100%;
-	height: 58px;
+	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	padding-left: 38px;
@@ -508,7 +507,11 @@ a {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.textarea {
+	margin-bottom: 16px;
+}
 .comment {
+	height: 120px;
 	padding: 8px 16px;
 	border-radius: 4px;
 	resize: none;
@@ -527,7 +530,6 @@ a {
 	color: #757575;
 	display: flex;
 	align-items: center;
-	margin-top: 16px;
 	margin-bottom: 24px;
 }
 
@@ -583,6 +585,12 @@ a {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 }
+::placeholder {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+}
 
 /* ------------------/Modal----------------- */
 
@@ -618,12 +626,12 @@ a {
 
 .display-primary {
 	display: flex;
-	gap: 120px;
 }
 .footer-text-container {
 }
 
 .footer-social-container {
+	margin-left: 120px;
 }
 .footer-social-title {
 	font-family: "Roboto";
@@ -659,6 +667,9 @@ a {
 	background-color: #31d0aa;
 }
 
+.fopter-susccribe-form {
+	margin-left: 80px;
+}
 .footer-form-subtitle {
 	font-weight: 500;
 	font-size: 16px;
@@ -674,6 +685,7 @@ a {
 .footer-form-input {
 	width: 264px;
 	height: 40px;
+	padding-left: 16px;
 	background-color: transparent;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
